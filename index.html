@@ -1,0 +1,72 @@
+<!--
+File: index.html
+other Files: style.css,index.js
+GUI Assignment: Creating Your First Web Page using javascript.I created a multiplication table
+that takes in input from a form and creates a table. using html,css,javascript.  
+Jorge Mejia , UMass Lowell Computer Science, jorge_mejia1@student.uml.edu
+credits:Bro Code JavaScript tutorial Url:https://www.youtube.com/watch?v=lfmg-EJ8gm4&t=2158s
+Copyright (c) JM 
+updated by JM on june 16, 2025
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table </title>
+    <link rel="stylesheet" href="CSS/style.css"> 
+</head>
+<body id ="container">
+    <div id=" content">
+        <header> Multiplication Table</header>
+        
+        <div id="Form_Table">
+            <form id = "RangeForm">
+                <h1> Please Enter a decimal value between -50 and 50</h1>
+                <div class= "UserValues">
+                    <label for="minRow">
+                    Enter Minimum Row Values: 
+                    </label>
+                    <input type= "number" id="minRow" name="minRow" min="-50" max="50">
+                </div> 
+                <div class= "UserValues">
+                    <label for="maxRow">
+                    Enter Maximum Row Values: 
+                    </label>
+                    <input type= "number" id="maxRow" name="maxRow" min="-50" max="50">
+                </div>   
+                <div class= "UserValues">
+                    <label for="minCol">
+                    Enter Minimum Collumn Values: 
+                    </label>
+                    <input type= "number" id="minCol" name="minCol" min="-50" max="50">
+                </div>   
+                <div class= "UserValues">
+                    <label for="maxCol">
+                    Enter Maximum Collumn Values: 
+                    </label>
+                    <input type= "number" id="maxCol" name="maxCol" min="-50" max="50">
+                </div>  
+                 <div id="error" class="errormsg">
+             </div>
+                <button type="submit">SUBMIT</button>   
+            </form >  
+           
+            <div id="tablegen">
+                 <table id = "tabler_td">
+             
+                </table>
+                </div>  
+            </div>  
+        </div>
+
+
+    </div>
+
+    <script src ="JS/index.js">
+        
+    </script>
+</body>
+</html>

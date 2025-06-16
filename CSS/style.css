@@ -1,0 +1,114 @@
+#container{
+    min-width: 400px;
+   
+}
+#content{
+    margin:2px;
+
+}
+h1{
+    font-size: small;
+    text-align: center;
+}
+
+header{
+    background-color:white;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: dimgrey;
+    border-bottom:2px solid rgb(17, 17, 18);
+}
+#Form_Table {
+  display: flex;
+  flex-direction:row;  
+  justify-content: center; 
+  margin-top: 30px;
+}
+#RangeForm{
+    min-height: 300px;
+    max-height: 400px;
+    background-color: rgba(230, 226, 226, 0.186);
+    border-style:dashed;
+    border-color: rgb(133, 133, 133);
+    width:300px;
+    display: inline grid;
+    overflow: auto;
+  
+}
+.UserValues #maxRow, #minRow, #minCol, #maxCol{
+  
+   float: right;
+   margin-right: 5px;
+   text-align: center;
+}
+.UserValues{
+    margin: 4px 0px 4px 8px;
+    text-align: start;
+    display: inline-block;
+    
+
+}
+#RangeForm button {
+    margin:6px 8px;
+}
+
+#tablegen {
+    max-width: 70%;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 400px;
+    overflow: auto;
+    
+
+}
+table :first-child th{
+  background-color: #000000;
+  
+  color: white;
+  position: sticky;
+  padding:1px ;
+  margin: 0 auto;
+  top: 0;
+  text-align: center;
+  min-height: 30px;
+  min-width:30px;
+}
+#tabler_td th:first-child {
+  background-color: rgb(255, 255, 255);
+  color: white;
+}
+#tabler_td td:first-child {
+  background-color: rgba(0, 0, 0, 0.996);
+  min-width: 30px;
+  min-height: 30px;
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  position: sticky;
+  margin: 0 auto;
+  left: 0;
+}
+table td:nth-child(odd) {
+  background-color: #cbcbcb;
+}
+#tabler_td{
+width:100%;
+min-height:300px;
+
+}
+#tabler_td td{
+    text-align: center;
+}
+#error{
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 6px;
+}
+th, td {
+  border: 1px solid #505050;
+  padding: 3px;
+  text-align: center;
+  white-space: nowrap;
+}
