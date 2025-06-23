@@ -9,6 +9,13 @@
 h1{
     font-size: small;
     text-align: center;
+    text-wrap:balance;
+    color: white;
+    background-color: rgb(88, 88, 88);
+    margin-top: 0;
+    padding-top: 6px;
+    border-bottom:2px solid rgb(139, 141, 177);
+
 }
 
 header{
@@ -50,16 +57,21 @@ header{
 
 }
 #RangeForm button {
-    margin:6px 8px;
+    margin:0 8px 6px 8px
 }
 
 #tablegen {
     max-width: 70%;
     min-width: 300px;
-    min-height: 300px;
+    min-height: 100%;
     max-height: 400px;
     overflow: auto;
     
+
+}
+
+div.UserValues{
+  border-bottom: 1px solid rgb(224, 224, 224);
 
 }
 table :first-child th{
@@ -95,20 +107,48 @@ table td:nth-child(odd) {
 #tabler_td{
 width:100%;
 min-height:300px;
+height: 100%;
 
 }
 #tabler_td td{
     text-align: center;
 }
-#error{
+ .error{
   color: red;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 6px;
+  margin-top: 1px;
+  
+ }
+  input.error{
+    border:2px double rgb(254, 143, 143);
+    color: black;
+  
+  }
+  input{
+    width:50px;
+  }
+
+  em.error{
+    text-wrap:nowrap;
+  }
+
+
+.success {
+  border-style: solid;
+  border-color:black;
+  border: 2px solid black ;
 }
+
 th, td {
   border: 1px solid #505050;
   padding: 3px;
   text-align: center;
   white-space: nowrap;
+}
+div#errorcontainer.error{
+  margin: 4px 5%;
+  color: black;
+  border-bottom:1px solid rgb(224, 224, 224);
+  
+  
+  
 }

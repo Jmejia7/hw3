@@ -1,8 +1,7 @@
 /*--
 File: index.js
-other Files: style.css,index.html
-parctice Javascript user interactivity by passing the information in your html elemants 
-to js and sendding back actions using functions.practiced keeping track of variables. 
+other Files: style.css,index.html validate.js 
+parctice using jquery validation plug in.learned how to link both js files to .css and html sendding back actions using functions.practiced keeping track of variables. 
 Jorge Mejia , UMass Lowell Computer Science, jorge_mejia1@student.uml.edu
 credits:Bro Code JavaScript tutorial Url:https://www.youtube.com/watch?v=lfmg-EJ8gm4&t=2158s
 Copyright (c) JM 
@@ -19,10 +18,7 @@ elMinCol  = document.getElementById('minCol');
 elMaxCol  = document.getElementById('maxCol');
 elerror = document.getElementById('error');
 
-elForm.addEventListener('submit', retrieveValues, false);
-
-function retrieveValues(event) {
-  event.preventDefault();
+function retrieveValues() {
 
   var minRow = elMinRow.value;
   var maxRow = elMaxRow.value;
@@ -38,13 +34,15 @@ function retrieveValues(event) {
   minCol = parseInt(minCol);
   maxCol = parseInt(maxCol);
 
-  //DOMs
-  error.textContent = "";
+  console.log(minRow);
+  console.log(maxRow);
+  console.log(minCol);
+  console.log(maxCol);
 
   
   
 
-//range is taken care by html min and max 
+/*//range is taken care by html min and max 
  if (
     isNaN(minRow) || isNaN(maxRow) ||
     isNaN(minCol) || isNaN(maxCol)
@@ -72,7 +70,7 @@ function retrieveValues(event) {
      || maxRow<-50|| maxRow >50) {
     error.textContent="Invalid. Values must be between -50  50";
     return;
-  }
+  }*/
 // creates the header col
   for (var col = minCol; col <= maxCol; col++) 
     {
